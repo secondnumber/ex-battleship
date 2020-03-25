@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(200, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+}
+
+.header {
+  margin-top: 30px;
+  text-align: center;
+  color: hsl(97, 81%, 48%);
+}
