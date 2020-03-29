@@ -1,12 +1,13 @@
-const position1 = Math.floor(Math.random() * 5);
-const position2 = position1 + 1;
-const position3 = position2 + 1;
+const position1 = 1;
+const position2 = 2;
+const position3 = 3;
 let guess;
 let hits = 0;
 let guesses = 0;
-let isShunk = false;
-while (isShunk === false) {
+let isSunk = false;
+while (isSunk === false) {
   guess = prompt('Введите число от 0 до 6');
+  guess = +guess;
   if (guess < 0 || guess > 6) {
     alert('Число должно быть от 0 до 6');
   } else {
@@ -19,7 +20,7 @@ while (isShunk === false) {
       alert('Попал!');
       hits += 1;
       if (hits === 3) {
-        isShunk = true;
+        isSunk = true;
         alert('Корабль потоплен!');
       }
     } else {
@@ -27,3 +28,6 @@ while (isShunk === false) {
     }
   }
 }
+
+let stats = `Ты сделал ${guesses} попыток, чтобы потопить корабль1`;
+alert(stats);
