@@ -15,8 +15,8 @@ body {
 }
 
 .field {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   margin: 0 auto;
   border-collapse: collapse;
   border: 1px solid hsl(97, 81%, 48%);
@@ -26,4 +26,24 @@ body {
 .field th,
 .field td {
   border: 1px solid hsl(97, 81%, 48%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.messageArea {
+  width: 400px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.guessСoordinates {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.markup td {
+  border: none;
 }
