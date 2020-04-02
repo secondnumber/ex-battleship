@@ -8,16 +8,51 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 30px 500px 1fr;
+  grid-template-rows: 60px 50px 30px 500px 50px;
+}
+
 .header {
-  margin: 30px 0 40px 0;
-  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
   color: hsl(97, 81%, 48%);
 }
 
+.messageArea {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.coordinatesTop {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+}
+
+.coordinatesNumbers {
+  width: 500px;
+}
+
+.coordinatesNumbers td {
+  text-align: center;
+}
+.coordinatesLeft {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+.coordinatesLetters {
+  height: 500px;
+}
+
 .field {
-  height: 400px;
-  width: 400px;
-  margin: 0 auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  height: 500px;
+  width: 500px;
   border-collapse: collapse;
   border: 1px solid hsl(97, 81%, 48%);
   text-align: center;
@@ -28,22 +63,20 @@ body {
   border: 1px solid hsl(97, 81%, 48%);
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 400px;
-}
-
-.messageArea {
-  width: 400px;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
 .guessСoordinates {
-  margin-top: 15px;
-  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+margin-top: 10px;
 }
 
-.markup td {
-  border: none;
+.hit {
+  background-image: url('./ship.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.miss {
+  background-image: url('./miss.png');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
