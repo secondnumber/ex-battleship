@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: hsl(200, 18%, 26%);
+  background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
 }
 
@@ -28,7 +28,6 @@ body {
 .coordinatesTop {
   grid-column-start: 3;
   grid-column-end: 4;
-
 }
 
 .coordinatesNumbers {
@@ -41,11 +40,17 @@ body {
 .coordinatesLeft {
   grid-column-start: 2;
   grid-column-end: 3;
-
 }
 
 .coordinatesLetters {
   height: 500px;
+}
+
+.field-wrapper {
+  height: 500px;
+  width: 500px;
+  background-image: url('./field.png');
+  background-size: cover;
 }
 
 .field {
@@ -66,7 +71,7 @@ body {
 .guessСoordinates {
   grid-column-start: 3;
   grid-column-end: 4;
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .hit {
