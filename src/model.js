@@ -1,3 +1,5 @@
+import view from './view.js';
+
 const model = {
   boardSize: 7,
   numShips: 3,
@@ -23,9 +25,9 @@ const model = {
     let col;
     if (direction === 1) {
       row = Math.floor(Math.random() * this.boardSize);
-      col = Math.floor(Math.random() * this.boardSize - this.shipLength);
+      col = Math.floor(Math.random() * (this.boardSize - this.shipLength));
     } else {
-      row = Math.floor(Math.random() * this.boardSize - this.shipLength);
+      row = Math.floor(Math.random() * (this.boardSize - this.shipLength));
       col = Math.floor(Math.random() * this.boardSize);
     }
     const newShipLocation = [];
@@ -78,6 +80,4 @@ const model = {
   },
 };
 
-model.fire('34');
-model.fire('13');
-model.fire('06');
+export default model;

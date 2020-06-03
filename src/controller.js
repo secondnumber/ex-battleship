@@ -1,3 +1,6 @@
+import view from './view.js';
+import model from './model.js';
+
 const controller = {
   guesses: 0,
   processGuess(guess) {
@@ -33,16 +36,4 @@ function parseGuess(guess) {
   }
 }
 
-function init() {
-  const fireButton = document.getElementById('fireButton');
-  fireButton.onclick = handleFireButton;
-}
-
-function handleFireButton() {
-  const guessInput = document.getElementById('guessInput');
-  const guess = guessInput.value;
-  controller.processGuess(guess);
-  guessInput.value = '';
-}
-
-window.onload = init;
+export default controller;
