@@ -85,3 +85,27 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.guessInput {
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  border: 2px solid hsl(97, 81%, 48%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(200, 18%, 26%);
+  outline: none;
+}
+
+.guessInput:focus {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.fireButton {
+  width: 50px;
+  height: 30px;
+  border: 2px solid hsl(97, 81%, 48%);
+  background-color: hsl(200, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
