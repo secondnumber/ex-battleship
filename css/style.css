@@ -49,7 +49,7 @@ body {
 .field-wrapper {
   height: 500px;
   width: 500px;
-  background-image: url('./field.png');
+  background-image: url('config/field.png');
   background-size: cover;
 }
 
@@ -75,13 +75,13 @@ body {
 }
 
 .hit {
-  background-image: url('./hit.svg');
+  background-image: url('../assets/hit.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .miss {
-  background-image: url('./miss.png');
+  background-image: url('../assets/miss.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
